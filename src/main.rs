@@ -25,7 +25,7 @@ async fn main() -> Result<(), anyhow::Error> {
     dotenvy::dotenv().ok();
     env_logger::init();
 
-    let config = Config::figment().merge(("temp_dir", "./data")).merge((
+    let config = Config::figment().merge(("temp_dir", "./files")).merge((
         "databases.db",
         rocket_db_pools::Config {
             url: env::var("DATABASE_URL")
