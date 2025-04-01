@@ -1,0 +1,19 @@
+[package]
+name = "sangjeom"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.66"
+dotenvy = "0.15.6"
+env_logger = "0.9.1"
+log = "0.4.17"
+rocket = { version = "0.5.0", features = ["json"] }
+rocket_db_pools = { version = "0.1.0", features = ["sqlx_sqlite", "sqlx_macros"] }
+serde = { version = "1.0.147", features = ["derive"] }
+serde_json = "1.0.87"
+sha256 = "1.1.1"
+sqlx = { version = "^0.7.0", features = ["runtime-tokio-rustls", "macros", "sqlite"] }
+tokio = { version = "1.21.2", features = ["sync", "rt-multi-thread", "macros"] }
+toml = "0.5.9"
+tree_magic = "0.2.3"

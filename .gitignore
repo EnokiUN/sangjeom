@@ -1,0 +1,9 @@
+/target
+/files
+.env
+dump.rdb
+data
+db.db
+db.db-wal
+db.db-shm
+Sangjeom.toml

@@ -1,0 +1,32 @@
+{
+  "db_name": "SQLite",
+  "query": "\nSELECT file_id, content_type, owner\nFROM files\nWHERE hash = $1\n            ",
+  "describe": {
+    "columns": [
+      {
+        "name": "file_id",
+        "ordinal": 0,
+        "type_info": "Int64"
+      },
+      {
+        "name": "content_type",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "owner",
+        "ordinal": 2,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "dcf2b7198fda1fd7c987e13a88ab68693728bfc9a40212f3eecbe6d82c30f510"
+}

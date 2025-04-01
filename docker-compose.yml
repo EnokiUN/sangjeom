@@ -1,0 +1,12 @@
+services:
+  sangjeom:
+    build: .
+    environment:
+      DATABASE_URL: "sqlite:db.db"
+      RUST_LOG: "DEBUG"
+    ports:
+      - "31731:8000"
+    volumes:
+      - "./db.db:/db.db"
+      - "./Sangjeom.toml:/Sangjeom.toml"
+      - "./files:/files"
